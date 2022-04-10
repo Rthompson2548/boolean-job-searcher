@@ -36,7 +36,7 @@ button {
 
 .app-title {
   margin: 0 0 36px 0 !important;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 900 !important;
 }
 
@@ -53,6 +53,11 @@ button {
 
 .what-why-info h2 {
   margin-bottom: 24px !important;
+  font-size: 20px;
+}
+
+.what-why-info p {
+  font-size: 16px;
 }
 
 hr {
@@ -88,7 +93,7 @@ input {
 }
 
 label {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .category-btns {
@@ -104,7 +109,8 @@ label {
 
 .category-btns button {
   background-color: #FA58B6;
-  margin: 8px 0;
+  margin: 4px 0;
+  font-size: 14px;
 }
 
 .category-buttons button:visited:after {
@@ -151,7 +157,7 @@ label {
 
 
 .boolean-string {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   /* padding-top: 10%; */
 }
