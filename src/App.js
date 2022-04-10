@@ -6,12 +6,12 @@ import React, { useState, useEffect, useRef } from "react";
 
 export default function App() {
   let searchCategories = [
-    "Experience",
+    "Job Title",
     "Location",
+    "Experience Level",
+    "Education",
     "Tech Stack",
-    "Title",
-    "Technologies",
-    "Company"
+    "Company Name",
   ];
 
 let defaultCategories = [
@@ -202,7 +202,9 @@ const handleConfirmFinished = () => {
 
           <div className="what-why-info">
             <h2>Categories</h2>
-            <p>Breaking down our boolean searches into categories can help us find jobs specific to our experience, tech stack, education, etc.. The benefit of this we can include multiple keywords that describe the same thing (i.e. "entry level", "junior", "recent grad", or "early career").</p>
+            <p>
+              Breaking our searches down into categories allows us to include several keywords that may describe the same thing (i.e.: "junior" or "entry level" for experience, and "developer" or "engineer" for title).
+            </p>
             <p>Choose a category below to get started</p>
           </div>
 
@@ -259,8 +261,8 @@ const handleConfirmFinished = () => {
       {
   showForm === true && (
     <div className="keyword-form">
-      <div>
-        <h1>{category}</h1>
+      <div className="what-why-info">
+        <h2>{category}</h2>
         <div>
           <label>Enter 1 or more keywords</label>
           <input
@@ -293,20 +295,20 @@ const handleConfirmFinished = () => {
       {showForm === true && (
         <div>
           <button className="continue-btn" onClick={handleSubmitCategoryWords}>
-            Continue
+            Next category
           </button>
         </div>
       )}
 
       {showNewCategoryButton === true && (
         <div className="what-why-info">
-              <h2>It's time to starting finding jobs tailored to you</h2>
-              <h4>
-                Boolean searches used by recruiters to identify candidates that meet job criteria.
-              </h4>
+              <h2>It's time to starting finding jobs tailored to you.</h2>
+              <p>
+                Boolean searches are a method used by recruiters to filter through applicants and identify top candidates.
+              </p>
             
-              <h4>Just as boolean searches help recruiters, candidates can use them to filter out jobs that aren't a good fit. It's time for those of us on the job hunt to start utilizing their tools to our own advantage to find jobs that fit our needs.
-            </h4>
+          <p>Just as recruiters use search booleans to find applicants that fit the job description, job seekers can use them to narrow down search results to find posts that meet their needs. 
+          </p>
 
           <button className="start-btn" onClick={handleNewCategory}>
               {addCategoryBtnText}
