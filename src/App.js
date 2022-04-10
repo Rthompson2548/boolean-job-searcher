@@ -302,7 +302,7 @@ const handleConfirmFinished = () => {
 
       {showNewCategoryButton === true && (
         <div className="what-why-info">
-              <h2>It's time to starting finding jobs tailored to you.</h2>
+              <h2>Start finding jobs tailored to you.</h2>
               <p>
                 Boolean searches are a method used by recruiters to filter through applicants and identify top candidates.
               </p>
