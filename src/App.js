@@ -51,8 +51,8 @@ let defaultCategories = [
 const [copyString, setCopyString] = useState("");
 const [addCategory, setAddCategory] = useState(false);
 const [addCategoryBtnText, setAddCategoryBtnText] = useState(
-  "Start my boolean search"
-);
+"Start finding jobs"
+)
 const [category, setCategory] = useState("");
 const [categoryChosen, setCategoryChosen] = useState(false);
 const [categoryOptions, setCategoryOptions] = useState(false);
@@ -60,7 +60,7 @@ const [showCategoryForm, setShowCategoryForm] = useState(false);
 const [showNewCategoryButton, setShowNewCategoryButton] = useState(true);
 const [showName, setShowName] = useState(false);
 const [showForm, setShowForm] = useState(false);
-const [showAddWordBtn, setShowAddWordBtn] = useState(false);
+const [showAddWordBtn, setShowAddWordBtn] = useState(false)
 const [word, setWord] = useState("");
 const [list, setList] = useState([]);
 const [show, setShow] = useState(false);
@@ -190,17 +190,25 @@ const handleConfirmFinished = () => {
   return (
     <div className="App">
       <div className="header">
-        <h1 className="app-title">Boolean Job Sourcer</h1>
-        <h3>Find jobs that match your experience</h3>
-      </div>
+        <h1 className="app-title">Boolean Job Finder</h1>
 
-      {/* <h4>Generate boolean strings to find jobs that match your experience</h4> */}
+      </div>
+      <div>
+    </div>
+
 
       {categoryOptions === true && (
         <div>
-          <div>
-            <p className="pick-a-category-txt">Click a category below to start</p>
-            {/* <br /> */}
+
+          <div className="what-why-info">
+            <h2>Categories</h2>
+            <p>Breaking down our boolean searches into categories can help us find jobs specific to our experience, tech stack, education, etc.. The benefit of this we can include multiple keywords that describe the same thing (i.e. "entry level", "junior", "recent grad", or "early career").</p>
+            <p>Choose a category below to get started</p>
+          </div>
+
+          <div className="category-form">
+            
+
 
             {/* iterates through array of category names and returns a button for each */}
             <div className="category-btns">
@@ -216,21 +224,18 @@ const handleConfirmFinished = () => {
                 </button>
               ))}
 
-              {/* displays the category name form on click */}
-              {/* <button onClick={handleCustomCategory}>Other</button> */}
-              <br />
-            </div>
-
-{
-  categoryChosen === true && (
-    <button className="continue-btn" onClick={handleAddWord}>
-      Continue
-    </button>
+              {
+              categoryChosen === true && (
+                <button className="continue-btn" onClick={handleAddWord}>
+                  Continue
+                </button>
   )
 }
 
 
-            {/* <br /> */}
+            </div>
+
+
           </div>
         </div>
       )}
@@ -244,53 +249,49 @@ const handleConfirmFinished = () => {
         onChange={handleCategoryNameChange}
         value={category}
       />
-{
-  /* <br /> */
-}
-<button onClick={submitCategory}>Submit</button>;
+
+<button className="submit-btn" onClick={submitCategory}>Submit</button>
+
+    </div>
+  )
+      }
+      
+      {
+  showForm === true && (
+    <div className="keyword-form">
+      <div>
+        <h1>{category}</h1>
+        <div>
+          <label>Enter 1 or more keywords</label>
+          <input
+            placeholder="Enter two or more letters..."
+            value={word}
+            onChange={handleWordChange}
+          />
+        </div>
+            </div>
+            <div>
+        <button className="keyword-btn" onClick={submitWord}>
+          Include exact keyword
+        </button>
+        <button className="keyword-btn" onClick={submitAsteriskWord}>
+          Include similar keywords
+        </button>
+      </div>
 
     </div>
   )
 }
 
 
-      {showForm === true && (
-        <div className="keyword-form">
-          <h1>{category}</h1>
-
-          <div className="keyword-form-info">
-            <div>
-              <label>Enter 1 or more keywords</label>
-            </div>
-            <input
-              placeholder="Enter two or more letters..."
-              value={word}
-              onChange={handleWordChange}
-            />
-          </div>
-
-          <div className="keyword-btns">
-            <button onClick={submitWord}>Include exact keyword</button>
-            <button onClick={submitAsteriskWord}>
-              Include similar keywords
-            </button>
-        
-          </div>
-          
-
-        </div>
-      )}
-
       {show === true && (
         <div className="keyword-string">
-          {/* <h3>Keywords:</h3> */}
           <h4>{booleanString}</h4>
         </div>
       )}
 
       {showForm === true && (
         <div>
-          {/* <br /> */}
           <button className="continue-btn" onClick={handleSubmitCategoryWords}>
             Continue
           </button>
@@ -298,31 +299,39 @@ const handleConfirmFinished = () => {
       )}
 
       {showNewCategoryButton === true && (
-        <div>
+        <div className="what-why-info">
+              <h2>It's time to starting finding jobs tailored to you</h2>
+              <h4>
+                Boolean searches used by recruiters to identify candidates that meet job criteria.
+              </h4>
+            
+              <h4>Just as boolean searches help recruiters, candidates can use them to filter out jobs that aren't a good fit. It's time for those of us on the job hunt to start utilizing their tools to our own advantage to find jobs that fit our needs.
+            </h4>
+
           <button className="start-btn" onClick={handleNewCategory}>
-            {addCategoryBtnText}
+              {addCategoryBtnText}
           </button>
-        </div>
+</div>
+    
       )}
+
 
       {finishBtn === true && (
         <div>
           <button className="done-btn" onClick={handleGenerateString}>
             Submit
           </button>
-          {/*           
-          <CopyToClipboard text={copyString}>
-            <button>Copy</button>;
-          </CopyToClipboard> */}
         </div>
       )}
 
       {finished === true && (
         <div className="boolean-string">
-          {/* <p>Your boolean string:</p> */}
-          <p value={copyString}>{result.join(" AND ")}</p>
+          <p className="what-why-info">
+            Job search string complete! Copy and paste to start finding jobs now.
+          </p>
+          <p className="boolean-string-txt" value={copyString}>{result.join(" AND ")}</p>
           <button className="done-btn" onClick={handleDone}>
-            Done
+            Finished
           </button>
         </div>
       )}
@@ -337,9 +346,9 @@ const handleConfirmFinished = () => {
       )}
 
       {goodbyeMessage === true && (
-        <div className="goodye-msg boolean-string">
-          <p>Goodbye!</p>
-          {/* <p value={copyString}>{result.join(" AND ")}</p> */}
+        <div className="boolean-string">
+<p>Goodbye!</p>
+
           <button
             className="start-btn"
             onClick={() => window.location.reload(false)}
