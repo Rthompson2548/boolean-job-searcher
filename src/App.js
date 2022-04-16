@@ -202,19 +202,12 @@ const handleConfirmFinished = () => {
           <div className="what-why-info">
             <h2>Categories</h2>
             <p>
-              Using <a href="https://library.alliant.edu/screens/boolean.pdf" target="_blank" rel="noopener noreferrer">search operators</a> enable us to break down our searches into categories and add multiple keywords in each category.               
-            </p>
-            <p>
-              By using the "AND" operator, you can specify multiple requirements, such as the job's location, experience level, and company name</p>
-            <p>
-              By using the "OR" operator, you can include multiple possible keywords for a given category. For example, a software developer, may add "engineer" or "developer" for the job title they are looking for. 
-            </p>
-            <p>Choose a category below to get started</p>
+              Using <a href="https://library.alliant.edu/screens/boolean.pdf" target="_blank" rel="noopener noreferrer">search operators</a> enable us to break down our searches into categories and add multiple keywords in each category. As a job searcher, for example, you can specify a variety of job locations, titles and company names.
+            </p>           
+            <p>Select a category below to get started</p>
           </div>
 
           <div className="category-form">
-            
-
 
             {/* iterates through array of category names and returns a button for each */}
             <div className="category-btns">

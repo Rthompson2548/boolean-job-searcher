@@ -10,7 +10,8 @@
   height: 50vh !important;
   font-family: sans-serif; 
   letter-spacing: 0.25px;
-  padding: 0 42px 12px 42px;
+  max-width: 80%;
+  margin: 0 36px;
 }
 
 .header {
@@ -35,9 +36,9 @@ button {
 }
 
 .app-title {
-  margin: 0 0 36px 0 !important;
-  font-size: 26px;
-  font-weight: 900 !important;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: bold !important;
 }
 
 .what-why-info {
@@ -53,16 +54,9 @@ button {
 
 .what-why-info h2 {
   letter-spacing: 0.5px !important;
-  margin-bottom: 24px !important;
   font-size: 22px !important;
   font-weight: medium;
 }
-
-.what-why-info p {
-  font-size: 16px !important;
-}
-
-
 
 .what-why-info p {
   text-align: left !important;
@@ -72,7 +66,7 @@ button {
 }
 
 .what-why-info h2 {
-  margin-bottom: 24px !important;
+  margin-bottom: 12px !important;
   font-size: 18px !important;
 }
 
@@ -128,8 +122,10 @@ label {
 
 .category-btns button {
   background-color: #FA58B6;
-  margin: 4px 0;
-  font-size: 14px;
+  font-size: 12px;
+  padding: 4px 32px;
+  margin: 6px 0;
+  width: 200px;
 }
 
 .category-buttons button:visited:after {
@@ -219,18 +215,19 @@ label {
 
 @media (min-width: 600px) {
   .app-title {
-    font-size: 42px;
+    font-size: 38px;
+    margin-bottom: 32px;
   }
 
   .what-why-info h2 {
-    font-size: 24px;
+    font-size: 22px !important;
   }
 
   .what-why-info p {
-    font-size: 20px;
+    font-size: 18px !important;
   }
 
   .start-btn {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
