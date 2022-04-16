@@ -36,7 +36,7 @@ button {
 
 .app-title {
   margin: 0 0 36px 0 !important;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 900 !important;
 }
 
@@ -53,11 +53,10 @@ button {
 
 .what-why-info h2 {
   margin-bottom: 24px !important;
-  font-size: 20px;
 }
 
 .what-why-info p {
-  font-size: 16px;
+  font-size: 104px !important;
 }
 
 hr {
@@ -93,7 +92,7 @@ input {
 }
 
 label {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .category-btns {
@@ -109,8 +108,7 @@ label {
 
 .category-btns button {
   background-color: #FA58B6;
-  margin: 4px 0;
-  font-size: 14px;
+  margin: 8px 0;
 }
 
 .category-buttons button:visited:after {
@@ -150,14 +148,16 @@ label {
 }
 
 .goodye-msg {
+  /* padding-top: 25%; */
   font-size: 42px !important;
 }
 
 
 
 .boolean-string {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
+  /* padding-top: 10%; */
 }
 
 .boolean-string p {
@@ -186,24 +186,8 @@ label {
   background-color: #6bcb77 !important;
 }
 
+/* .boolean-string-txt { */
 
-/**
-320px — 480px: Mobile devices.
-481px — 768px: iPads, Tablets.
-769px — 1024px: Small screens, laptops.
-1025px — 1200px: Desktops, large screens.
-*/
+/* } */
 
-@media (min-width: 600px) {
-  .app-title {
-    font-size: 42px;
-  }
 
-  .what-why-info h2 {
-    font-size: 24px;
-  }
-
-  .what-why-info p {
-    font-size: 20px;
-  }
-}

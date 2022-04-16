@@ -295,23 +295,21 @@ const handleConfirmFinished = () => {
       {showForm === true && (
         <div>
           <button className="continue-btn" onClick={handleSubmitCategoryWords}>
-            Next category
+            Continue
           </button>
         </div>
       )}
 
       {showNewCategoryButton === true && (
-      <div className="what-why-info">
-          <h2>
-            It's time to starting finding jobs tailored to you.
-          </h2>
-          <p>
-            <a href="https://www.toolbox.com/hr/recruitment-onboarding/articles/what-is-boolean-search-in-recruiting-process-with-examples-for-google-and-linkedin/#:~:text=Boolean%20search%20in%20recruitment%20is,management%20(CRM)%20solution%2C." target="_blank" rel = "noopener noreferrer">Boolean searches</a> are widely used by recruiters to filter through applicants and identify top applicants.
+        <div className="what-why-info">
+              <h2>It's time to starting finding jobs tailored to you.</h2>
+              <p>
+                Boolean searches are a method used by recruiters to filter through applicants and identify top candidates.
+              </p>
+            
+          <p>Just as recruiters use search booleans to find applicants that fit the job description, job seekers can use them to narrow down search results to find posts that meet their needs. 
           </p>
-          <p>
-            Just as recruiters use search booleans to source candidates that fit the job description, job seekers can use them to <a href="https://www.linkedin.com/pulse/using-boolean-searches-source-your-next-job-kip-brookbank/" target="_blank" rel = "noopener noreferrer">find their next job</a>
-          </p>
-          
+
           <button className="start-btn" onClick={handleNewCategory}>
               {addCategoryBtnText}
           </button>
