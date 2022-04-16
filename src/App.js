@@ -190,11 +190,8 @@ const handleConfirmFinished = () => {
   return (
     <div className="App">
       <div className="header">
-        <h1 className="app-title">Boolean Job Finder</h1>
-<<<<<<< HEAD
-=======
+<h1 className="app-title">Boolean Job Finder</h1>;
 
->>>>>>> 64205a1ff771c2227d6d7b6f36abe14dfd6c3b5a
       </div>
       <div>
     </div>
@@ -202,10 +199,6 @@ const handleConfirmFinished = () => {
 
       {categoryOptions === true && (
         <div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 64205a1ff771c2227d6d7b6f36abe14dfd6c3b5a
           <div className="what-why-info">
             <h2>Categories</h2>
             <p>
@@ -243,15 +236,13 @@ const handleConfirmFinished = () => {
             </div>
 
 
-<<<<<<< HEAD
-=======
             </div>
 
 
->>>>>>> 64205a1ff771c2227d6d7b6f36abe14dfd6c3b5a
           </div>
-        </div>
-      )}
+        
+  )
+}
 
 {
   showCategoryForm === true && (

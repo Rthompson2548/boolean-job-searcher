@@ -42,7 +42,6 @@ button {
 
 .what-why-info {
   overflow: hidden;
-<<<<<<< HEAD
 }
 
 .what-why-info p {
@@ -61,8 +60,7 @@ button {
   font-size: 16px;
 }
 
-=======
-}
+
 
 .what-why-info p {
   text-align: left !important;
@@ -179,10 +177,6 @@ label {
 .boolean-string {
   font-size: 20px;
   font-weight: bold;
-<<<<<<< HEAD
-=======
-  /* padding-top: 10%; */
->>>>>>> 64205a1ff771c2227d6d7b6f36abe14dfd6c3b5a
 }
 
 .boolean-string p {
