@@ -42,6 +42,7 @@ button {
 
 .what-why-info {
   overflow: hidden;
+<<<<<<< HEAD
 }
 
 .what-why-info p {
@@ -60,6 +61,26 @@ button {
   font-size: 16px;
 }
 
+=======
+}
+
+.what-why-info p {
+  text-align: left !important;
+  font-weight: medium;
+  margin-bottom: 20px;
+  /* line-height: 1rem; */
+}
+
+.what-why-info h2 {
+  margin-bottom: 24px !important;
+  font-size: 20px;
+}
+
+.what-why-info p {
+  font-size: 16px;
+}
+
+>>>>>>> 64205a1ff771c2227d6d7b6f36abe14dfd6c3b5a
 hr {
   margin-bottom: 20px;
 }
@@ -158,6 +179,10 @@ label {
 .boolean-string {
   font-size: 20px;
   font-weight: bold;
+<<<<<<< HEAD
+=======
+  /* padding-top: 10%; */
+>>>>>>> 64205a1ff771c2227d6d7b6f36abe14dfd6c3b5a
 }
 
 .boolean-string p {
@@ -185,6 +210,10 @@ label {
 .home-btn {
   background-color: #6bcb77 !important;
 }
+
+/* .boolean-string-txt { */
+
+/* } */
 
 
 /**

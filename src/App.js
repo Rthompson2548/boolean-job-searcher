@@ -191,6 +191,10 @@ const handleConfirmFinished = () => {
     <div className="App">
       <div className="header">
         <h1 className="app-title">Boolean Job Finder</h1>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64205a1ff771c2227d6d7b6f36abe14dfd6c3b5a
       </div>
       <div>
     </div>
@@ -198,6 +202,10 @@ const handleConfirmFinished = () => {
 
       {categoryOptions === true && (
         <div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 64205a1ff771c2227d6d7b6f36abe14dfd6c3b5a
           <div className="what-why-info">
             <h2>Categories</h2>
             <p>
@@ -235,6 +243,12 @@ const handleConfirmFinished = () => {
             </div>
 
 
+<<<<<<< HEAD
+=======
+            </div>
+
+
+>>>>>>> 64205a1ff771c2227d6d7b6f36abe14dfd6c3b5a
           </div>
         </div>
       )}
@@ -298,6 +312,7 @@ const handleConfirmFinished = () => {
       )}
 
       {showNewCategoryButton === true && (
+
       <div className="what-why-info">
           <h2>
             It's time to starting finding jobs tailored to you.
@@ -312,6 +327,7 @@ const handleConfirmFinished = () => {
             This searching method is widely used by recruiters to identify top candidates based on job description requirements. But just as recruiters use them to source applications who fit the position, job seekers can use them to <a href="https://www.linkedin.com/pulse/using-boolean-searches-source-your-next-job-kip-brookbank/" target="_blank" rel = "noopener noreferrer">find their next job</a>
           </p>
           
+
           <button className="start-btn" onClick={handleNewCategory}>
               {addCategoryBtnText}
           </button>
