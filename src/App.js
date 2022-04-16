@@ -190,7 +190,7 @@ const handleConfirmFinished = () => {
   return (
     <div className="App">
       <div className="header">
-<h1 className="app-title">Boolean Job Finder</h1>;
+<h1 className="app-title">Boolean Job Finder</h1>
 
       </div>
       <div>
@@ -202,7 +202,12 @@ const handleConfirmFinished = () => {
           <div className="what-why-info">
             <h2>Categories</h2>
             <p>
-              Breaking our searches down into categories allows us to include several keywords that may describe the same thing (i.e.: "junior" or "entry level" for experience, and "developer" or "engineer" for title).
+              Using <a href="https://library.alliant.edu/screens/boolean.pdf" target="_blank" rel="noopener noreferrer">search operators</a> enable us to break down our searches into categories and add multiple keywords in each category.               
+            </p>
+            <p>
+              By using the "AND" operator, you can specify multiple requirements, such as the job's location, experience level, and company name</p>
+            <p>
+              By using the "OR" operator, you can include multiple possible keywords for a given category. For example, a software developer, may add "engineer" or "developer" for the job title they are looking for. 
             </p>
             <p>Choose a category below to get started</p>
           </div>
@@ -308,16 +313,13 @@ const handleConfirmFinished = () => {
           <h2>
             It's time to starting finding jobs tailored to you.
           </h2>
+         
           <p>
-            What is a boolean search?
+            <a href="https://www.toolbox.com/hr/recruitment-onboarding/articles/what-is-boolean-search-in-recruiting-process-with-examples-for-google-and-linkedin/#:~:text=Boolean%20search%20in%20recruitment%20is,management%20(CRM)%20solution%2C." target="_blank" rel="noopener noreferrer">Boolean searches</a> utilize mathematical operators, such as "AND" and "OR", to specify requirements that generate relevant results. 
           </p>
           <p>
-            <a href="https://www.toolbox.com/hr/recruitment-onboarding/articles/what-is-boolean-search-in-recruiting-process-with-examples-for-google-and-linkedin/#:~:text=Boolean%20search%20in%20recruitment%20is,management%20(CRM)%20solution%2C." target="_blank" rel="noopener noreferrer">Boolean searches</a> utilize mathematical operators, such as AND and OR, to specify requirements that generate relevant results. 
-          </p>
-          <p>
-            This searching method is widely used by recruiters to identify top candidates based on job description requirements. But just as recruiters use them to source applications who fit the position, job seekers can use them to <a href="https://www.linkedin.com/pulse/using-boolean-searches-source-your-next-job-kip-brookbank/" target="_blank" rel = "noopener noreferrer">find their next job</a>
-          </p>
-          
+            This method is widely used by recruiters to identify top candidates based on job description requirements. But just as recruiters use them to source applications who fit the position, job seekers can use them to <a href="https://www.linkedin.com/pulse/using-boolean-searches-source-your-next-job-kip-brookbank/" target="_blank" rel = "noopener noreferrer">find their next job</a>.
+          </p>       
 
           <button className="start-btn" onClick={handleNewCategory}>
               {addCategoryBtnText}
