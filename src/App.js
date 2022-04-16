@@ -191,7 +191,6 @@ const handleConfirmFinished = () => {
     <div className="App">
       <div className="header">
         <h1 className="app-title">Boolean Job Finder</h1>
-
       </div>
       <div>
     </div>
@@ -199,7 +198,6 @@ const handleConfirmFinished = () => {
 
       {categoryOptions === true && (
         <div>
-
           <div className="what-why-info">
             <h2>Categories</h2>
             <p>
@@ -233,7 +231,6 @@ const handleConfirmFinished = () => {
                 </button>
   )
 }
-
 
             </div>
 
@@ -306,10 +303,13 @@ const handleConfirmFinished = () => {
             It's time to starting finding jobs tailored to you.
           </h2>
           <p>
-            <a href="https://www.toolbox.com/hr/recruitment-onboarding/articles/what-is-boolean-search-in-recruiting-process-with-examples-for-google-and-linkedin/#:~:text=Boolean%20search%20in%20recruitment%20is,management%20(CRM)%20solution%2C." target="_blank" rel = "noopener noreferrer">Boolean searches</a> are widely used by recruiters to filter through applicants and identify top applicants.
+            What is a boolean search?
           </p>
           <p>
-            Just as recruiters use search booleans to source candidates that fit the job description, job seekers can use them to <a href="https://www.linkedin.com/pulse/using-boolean-searches-source-your-next-job-kip-brookbank/" target="_blank" rel = "noopener noreferrer">find their next job</a>
+            <a href="https://www.toolbox.com/hr/recruitment-onboarding/articles/what-is-boolean-search-in-recruiting-process-with-examples-for-google-and-linkedin/#:~:text=Boolean%20search%20in%20recruitment%20is,management%20(CRM)%20solution%2C." target="_blank" rel="noopener noreferrer">Boolean searches</a> utilize mathematical operators, such as AND and OR, to specify requirements that generate relevant results. 
+          </p>
+          <p>
+            This searching method is widely used by recruiters to identify top candidates based on job description requirements. But just as recruiters use them to source applications who fit the position, job seekers can use them to <a href="https://www.linkedin.com/pulse/using-boolean-searches-source-your-next-job-kip-brookbank/" target="_blank" rel = "noopener noreferrer">find their next job</a>
           </p>
           
           <button className="start-btn" onClick={handleNewCategory}>
