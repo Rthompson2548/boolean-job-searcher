@@ -274,10 +274,10 @@ const handleConfirmFinished = () => {
             </div>
             <div>
         <button className="keyword-btn" onClick={submitWord}>
-          Include exact keyword
+          Exact word
         </button>
         <button className="keyword-btn" onClick={submitAsteriskWord}>
-          Include similar keywords
+          Includes word
         </button>
       </div>
 
@@ -295,7 +295,7 @@ const handleConfirmFinished = () => {
       {showForm === true && (
         <div>
           <button className="continue-btn" onClick={handleSubmitCategoryWords}>
-            Next category
+            Next
           </button>
         </div>
       )}
