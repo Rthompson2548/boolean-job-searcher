@@ -295,7 +295,7 @@ const handleConfirmFinished = () => {
       {showForm === true && (
         <div>
           <button className="continue-btn" onClick={handleSubmitCategoryWords}>
-            Next
+            Next category
           </button>
         </div>
       )}
