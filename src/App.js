@@ -141,9 +141,7 @@ export default function App() {
 
   return (
     <div
-      className="App"
-      // style={{display: 'flex',  flexDirection: "column", alignContent: "center", height: '100vh'}}
-    >
+      className="App">
       <h1>Boolean Job Finder</h1>
      
       {categoryOptions === true && (

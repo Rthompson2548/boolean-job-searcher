@@ -82,6 +82,7 @@ label {
 .continue-btn {
   background-color: #3E00FF !important;
   margin-top: 16px;
+  padding: 10px 16px;
 }
 
 .blue-bg {
