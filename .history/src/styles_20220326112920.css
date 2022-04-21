@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #000;
+  /* padding: 18px 0; */
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 0.75px;
+}
+
+.header {
+  line-height: 2rem;
+  letter-spacing: 0.75px;
+  padding: 32px 0;
+}
+
+img {
+  width: 250px;
+  height: auto;
+}
+
+button {
+  padding: 12px 36px;
+  width: 200px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  margin: 12px 0 0 0;
+  font-size: 16px;
+}
+
+.app-title {
+  margin-bottom: 28px;
+  font-size: 56px;
+}
+
+.header h3 {
+  font-size: 28px;
+}
+
+.start-btn {
+  background-color: #6bcb77;
+  color: #fff;
+  font-size: 22px;
+  vertical-align: middle;
+  width: 400px;
+  padding: 20px 0;
+}
+
+input {
+  background-color: #fff;
+  font-size: 16px;
+  color: #000;
+  /* height: 6px; */
+  /* padding: 16px 0 16px 12px; */
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.category-btns {
+  /* center the element */
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-btns button {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.category-buttons button:active,
+button:focus {
+  /* color: #fff !important;
+  background-color: #FFD93D !important; */
+}
+
+.category-buttons button:visited:after {
+  color: #fff !important;
+  background-color: #000 !important;
+}
+
+.continue-btn {
+  background-color: #4d96ff;
+  color: #fff;
+}
+
+.keyword-form-info {
+  margin-top: 24px;
+}
+
+.keyword-form-info input {
+  padding: 10px 24px 10px 10px;
+  margin-top: 16px;
+}
+
+.keyword-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.keyword-btns button {
+  background-color: #ff6b6b;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 23px;
+  margin: 16px 12px;
+}
+
+.keyword-string {
+  padding: 20px;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.goodye-msg {
+  /* padding-top: 25%; */
+  font-size: 42px !important;
+}
+
+.goodye-msg button {
+  /* background-color: #4D96FF !important; */
+  /* vertical-align: middle !important; */
+}
+
+.boolean-string {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 25%;
+}
+
+.boolean-string button {
+  background-color: #fa58bc;
+  color: #fff;
+}
+
+.done-btn {
+  background-color: #4d96ff !important;
+  color: #fff;
+  margin-top: 1.5rem;
+}
+
+.home-btn {
+  background-color: #6bcb77 !important;
+}
+
+

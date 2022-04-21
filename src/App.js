@@ -1,7 +1,6 @@
 import "./styles.css";
 // import { CopyToClipboard } from "react-copy-to-clipboard";
-import React, { useState, useEffect } from "react";
-import Categories from "./Categories/Categories";
+import React, { useState, useEffect, useRef } from "react";
 // import "./data.js";
 export default function App() {
   let searchCategories = [
@@ -41,6 +40,11 @@ export default function App() {
     setFinishBtn(false);
     setCategoryOptions(true);
     setCategoryChosen(false);
+  };
+
+  const handleCustomCategory = () => {
+    setShowCategoryForm(true);
+    setCategoryOptions(false);
   };
 
   const handleCategoryNameChange = (event) => {
@@ -161,7 +165,6 @@ export default function App() {
             <p>Select a category below to get started</p>
           </div>
 
-          {/* CategoryFrom */}
           <div className="category-form">
             {/* iterates through array of category names and returns a button for each */}
             <div className="category-btns">
@@ -184,8 +187,6 @@ export default function App() {
               )}
             </div>
           </div>
-          <Categories setCategory={setCategory} categoryChosen={categoryChosen} setCategoryChosen={setCategoryChosen} setShowForm={setShowForm} setCategoryOptions={setCategoryOptions}
-        />
         </div>
       )}
 
