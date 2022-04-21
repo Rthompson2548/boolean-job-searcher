@@ -29,4 +29,4 @@ let defaultCategories = [
       name: "Company Name",
       placeholders: ["Junior", "Entry", "Grad", "Student"],
     },
-  ];
+];
